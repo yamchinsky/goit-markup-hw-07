@@ -1,0 +1,50 @@
+.cards {
+  padding-top: 95px;
+  padding-bottom: 34px;
+}
+
+.cards .container {
+  max-width: 1200px;
+  min-width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.button-container .buttons-list > li:not(:nth-last-child(-n + 1)) {
+  margin-right: 8px;
+}
+
+.cards .button-container {
+  display: flex;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.button-container .buttons-list {
+  display: flex;
+  margin: 0 auto;
+}
+
+.button-container .button-primary {
+  min-height: 38px;
+  border-radius: 4px;
+}
+
+.cards .label {
+  display: none;
+}
+
+.buttons-list {
+  display: flex;
+  justify-content: center;
+}
+.button-item {
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-bottom: 25px;
+  margin-top: 24px;
+  padding: 6px 22px;
+  min-width: 145px;
+  text-align: center;
+}

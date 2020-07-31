@@ -1,0 +1,165 @@
+.button {
+  font-family: inherit;
+}
+
+.hero .button {
+  display: inline-flex;
+  border-radius: 4px;
+  color: $primary-white-color;
+  background-color: $accent-color;
+  border: none;
+  outline: none;
+}
+
+/* .contacts .button:first-child::after {
+  content: ;
+  background-image: url(../images/envelope.svg);
+  background-size: contain;
+  background-color: tomato;
+  } */
+
+.button-primary {
+  display: inline-block;
+  border-radius: 4px;
+  color: $title-text-color;
+  background-color: #f5f4fa;
+  border-color: transparent;
+  text-align: center;
+}
+
+.order-service {
+  --h: 50px;
+  /*   min-width: 200px; */
+  padding: 0 32px; /* гарантия отступов при увеличении длинны текста*/
+
+  height: var(--h); /* центрирование одной линии текста по вертикали */
+  line-height: var(--h); /* центрирование одной линии текста по вертикали */
+
+  cursor: pointer;
+
+  /* текст */
+  text-align: center; /* центрирование  по горзонтали */
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
+  /* цвета */
+  color: $primary-white-color;
+  background: $accent-color;
+
+  /* украшения   */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-service:hover,
+.order-service:focus {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.order-service:active {
+  box-shadow: inset 0px 2px 2px crimson;
+}
+
+div {
+  margin: 1rem;
+  text-align: center;
+}
+
+.button-item .all-services {
+  --h: 50px;
+  /*   min-width: 200px; */
+  padding: 0px 22px;
+  width: 30px;
+
+  height: var(--h); /* центрирование одной линии текста по вертикали */
+  line-height: var(--h); /* центрирование одной линии текста по вертикали */
+
+  cursor: pointer;
+
+  /* текст */
+  text-align: center; /* центрирование  по горзонтали */
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
+  /* цвета */
+  color: $primary-white-color;
+  background: $accent-color;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* украшения   */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.all-services:hover,
+.all-services:focus {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  color: $primary-white-color;
+  background: $accent-color;
+}
+
+.all-services:active {
+  box-shadow: inset 0px 2px 2px crimson;
+}
+
+div {
+  margin: 1rem;
+  text-align: center;
+}
+
+.service {
+  --h: 50px;
+  /*   min-width: 200px; */
+  padding: 0 32px; /* гарантия отступов при увеличении длинны текста*/
+
+  height: var(--h); /* центрирование одной линии текста по вертикали */
+  line-height: var(--h); /* центрирование одной линии текста по вертикали */
+
+  cursor: pointer;
+
+  /* текст */
+  text-align: center; /* центрирование  по горзонтали */
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
+  /* цвета */
+  color: $primary-black-color;
+  background: $primary-white-color;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* украшения   */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.service:hover,
+.service:focus {
+  background-color: $accent-color;
+  color: $primary-white-color;
+}
+
+.service:active {
+  box-shadow: inset 0px 2px 2px crimson;
+}
+
+div {
+  margin: 1rem;
+  text-align: center;
+}
