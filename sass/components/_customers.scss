@@ -4,24 +4,24 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-.customers .container {
+.customers &-container {
   max-width: 1200px;
   margin: 0 auto;
 }
-.customers .title {
+.customers &-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-.customers .customers-list {
+.customers &-customers-list {
   list-style: none;
   display: flex;
   margin-top: 50px;
 }
 
-.customers-list .item {
+.customers-list &-item {
   display: flex;
   margin: auto;
   border: 1px solid $description-text-color;
@@ -32,10 +32,10 @@
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
 }
-.customers-list .item:not(:nth-last-child(-n + 1)) {
+.customers-list &-item:not(:nth-last-child(-n + 1)) {
   margin-right: 30px;
 }
-.customers-list .customer-link {
+.customers-list &-customer-link {
   display: inline-flex;
   margin: auto;
   height: 90px;
@@ -47,7 +47,7 @@
   background-color: $primary-white-color;
 }
 
-.customer-link .icon {
+.customer-link &-icon {
   color: $description-text-color;
   fill: $description-text-color;
   transition-property: fill, color;

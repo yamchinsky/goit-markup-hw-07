@@ -62,15 +62,6 @@ Use a better box model (opinionated).
 }
 
 /**
-Use a more readable tab size (opinionated).
-*/
-:root {
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-     tab-size: 4;
-}
-
-/**
 1. Correct the line height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
 */
@@ -296,51 +287,18 @@ summary {
   display: list-item;
 }
 
-.body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-black-color);
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
-}
-
-* ::before,
-* ::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-.link {
-  color: var(--title-text-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-}
-
-.list {
-  list-style: none;
-}
-
-.button {
-  text-decoration: none;
-}
-
-.description {
-  color: var(--description-text-color);
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   margin-right: 85px;
-  color: var(--accent-color);
+  color: #2196f3;
   /* identical to box height */
 }
 
 .part-logo {
-  color: var(--title-text-color);
+  color: #212121;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -351,7 +309,7 @@ summary {
 
 .part-logo:hover,
 .part-logo:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .part-logo:active,
@@ -382,7 +340,7 @@ summary {
 
 .footer .part-logo-footer,
 .address {
-  color: var(--primary-white-color);
+  color: #ffffff;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -392,12 +350,12 @@ summary {
 }
 
 .footer .part-logo {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .footer .part-logo-footer:hover,
 .footer .part-logo-footer:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .footer .part-logo:active,
@@ -406,7 +364,7 @@ summary {
 }
 
 .footer .contact-link {
-  color: var(--description-text-color);
+  color: #757575;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -417,7 +375,7 @@ summary {
 
 .footer .contact-link:hover,
 .footer .contact-link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .footer .join {
@@ -468,8 +426,8 @@ summary {
   display: -ms-flexbox;
   display: flex;
   background-color: #2f303a;
-  fill: var(--primary-white-color);
-  color: var(--primary-white-color);
+  fill: #ffffff;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
@@ -480,7 +438,7 @@ summary {
 
 .join-social-item .join-link:hover,
 .join-social-item .join-link:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .footer .left-container {
@@ -517,7 +475,7 @@ summary {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: #ffffff;
   margin-bottom: 20px;
   display: block;
   text-align: left;
@@ -542,7 +500,7 @@ summary {
           align-items: center;
   width: 200px;
   height: 50px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -550,7 +508,7 @@ summary {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  color: var(--primary-white-color);
+  color: #ffffff;
   letter-spacing: 0.06em;
 }
 
@@ -562,7 +520,7 @@ summary {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: inherit;
-  color: var(--primary-white-color);
+  color: #ffffff;
 }
 
 .submit-icon {
@@ -571,8 +529,41 @@ summary {
   width: 24px;
 }
 
+.body {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+* ::before,
+* ::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.link {
+  color: #212121;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.list {
+  list-style: none;
+}
+
+.button {
+  text-decoration: none;
+}
+
+.description {
+  color: #757575;
+}
+
 .header {
-  background-color: var(--primary-white-color);
+  background-color: #ffffff;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
 }
@@ -617,7 +608,7 @@ summary {
   padding-top: 30px;
   padding-bottom: 30px;
   position: relative;
-  color: var(--title-text-color);
+  color: #212121;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -627,7 +618,7 @@ summary {
 }
 
 .header .link:hover {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .header .link::after {
@@ -636,13 +627,13 @@ summary {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   overflow: hidden;
   position: absolute;
   left: 0px;
   bottom: 0px;
   opacity: 0;
-  color: var(--title-text-color);
+  color: #212121;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -653,11 +644,11 @@ summary {
 
 .header .link:hover::after {
   opacity: 1;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .header .link-current {
-  color: var(--accent-color);
+  color: #2196f3;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -667,11 +658,11 @@ summary {
 }
 
 .header .link-current:hover {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .list-item {
-  color: var(--primary-black-color);
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -741,8 +732,8 @@ summary {
 
 .auth-nav .auth-link:hover,
 .auth-nav .auth-link:hover svg {
-  fill: var(--accent-color);
-  color: var(--accent-color);
+  fill: #2196f3;
+  color: #2196f3;
 }
 
 .header .button:focus,
@@ -751,7 +742,7 @@ summary {
 .header .link:hover,
 .footer .link:focus,
 .footer .link:hover {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .header .button:active,
@@ -776,10 +767,10 @@ summary {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header\img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header\img.jpg);
-  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../../images/Header.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/Header.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .hero .title {
@@ -838,7 +829,7 @@ summary {
 
 .advantages .icon-container:hover,
 .advantages .icon-container:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .advantages .container {
@@ -970,7 +961,7 @@ summary {
 }
 
 .employees .item {
-  background-color: var(--primary-white-color);
+  background-color: #ffffff;
   border-radius: 4px;
   overflow: hidden;
   min-width: 270px;
@@ -1019,8 +1010,8 @@ summary {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--primary-white-color);
-  background-color: var(--primary-white-color);
+  color: #ffffff;
+  background-color: #ffffff;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
@@ -1039,11 +1030,11 @@ summary {
 
 .social-item .link:hover,
 .social-item .link:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .social-item .icon {
-  fill: var(--description-text-color);
+  fill: #757575;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -1054,7 +1045,7 @@ summary {
 
 .link:hover .icon,
 .link:focus .icon {
-  fill: var(--primary-white-color);
+  fill: #ffffff;
 }
 
 .customers {
@@ -1089,7 +1080,7 @@ summary {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  border: 1px solid var(--description-text-color);
+  border: 1px solid #757575;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -1114,19 +1105,19 @@ summary {
   margin: auto;
   height: 90px;
   margin: auto;
-  color: var(--description-text-color);
+  color: #757575;
   -webkit-transition-property: color, fill;
   transition-property: color, fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--primary-white-color);
+  background-color: #ffffff;
 }
 
 .customer-link .icon {
-  color: var(--description-text-color);
-  fill: var(--description-text-color);
+  color: #757575;
+  fill: #757575;
   -webkit-transition-property: fill, color;
   transition-property: fill, color;
   -webkit-transition-duration: 250ms;
@@ -1136,29 +1127,14 @@ summary {
 }
 
 .customer-link:hover {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .customer-link:hover .icon {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
-}
-
-.button {
-  font-family: inherit;
-}
-
-.hero .button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  border: none;
-  outline: none;
+  color: #2196f3;
+  fill: #2196f3;
+  border: 1px solid #2196f3;
 }
 
 /* .contacts .button:first-child::after {
@@ -1170,7 +1146,7 @@ summary {
 .button-primary {
   display: inline-block;
   border-radius: 4px;
-  color: var(--title-text-color);
+  color: #212121;
   background-color: #f5f4fa;
   border-color: transparent;
   text-align: center;
@@ -1195,8 +1171,8 @@ summary {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   /* цвета */
-  color: var(--primary-white-color);
-  background: var(--accent-color);
+  color: #ffffff;
+  background: #2196f3;
   /* украшения   */
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1227,52 +1203,6 @@ div {
   text-align: center;
 }
 
-.button-item .all-services {
-  --h: 50px;
-  /*   min-width: 200px; */
-  padding: 0px 22px;
-  width: 30px;
-  height: var(--h);
-  /* центрирование одной линии текста по вертикали */
-  line-height: var(--h);
-  /* центрирование одной линии текста по вертикали */
-  cursor: pointer;
-  /* текст */
-  text-align: center;
-  /* центрирование  по горзонтали */
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.06em;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  /* цвета */
-  color: var(--primary-white-color);
-  background: var(--accent-color);
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* украшения   */
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.all-services:hover,
-.all-services:focus {
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  color: var(--primary-white-color);
-  background: var(--accent-color);
-}
-
-.all-services:active {
-  -webkit-box-shadow: inset 0px 2px 2px crimson;
-          box-shadow: inset 0px 2px 2px crimson;
-}
-
 div {
   margin: 1rem;
   text-align: center;
@@ -1297,8 +1227,8 @@ div {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   /* цвета */
-  color: var(--primary-black-color);
-  background: var(--primary-white-color);
+  color: rgba(0, 0, 0, 0.8);
+  background: #ffffff;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
   -webkit-transition-duration: 250ms;
@@ -1313,8 +1243,8 @@ div {
 
 .service:hover,
 .service:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 .service:active {
@@ -1365,7 +1295,7 @@ div {
   position: absolute;
   width: 370px;
   height: 0;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   padding: 0px;
   bottom: 110px;
   left: 0px;
@@ -1391,13 +1321,13 @@ div {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-  color: var(--primary-white-color);
+  color: #ffffff;
   padding: 40px;
   opacity: 0px;
 }
 
 .feature-description:hover {
-  color: var(--primary-white-color);
+  color: #ffffff;
   text-align: center;
   opacity: 1;
 }
@@ -1515,7 +1445,7 @@ div {
   left: 50%;
   width: 528px;
   height: 581px;
-  background-color: var(--primary-white-color);
+  background-color: #ffffff;
   padding: 40px;
   opacity: 1;
   overflow: scroll;
@@ -1544,7 +1474,7 @@ div {
   display: flex;
   width: 30px;
   height: 30px;
-  background-color: var(--primary-white-color);
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100%;
   background-image: url();
@@ -1554,14 +1484,14 @@ div {
   width: 18px;
   height: 18px;
   margin: auto;
-  fill: var(--primary-black-color);
+  fill: rgba(0, 0, 0, 0.8);
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover.modal-close-button > svg,
 .modal-close-button:focus .modal-close-button > svg {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .modal-text {
@@ -1598,7 +1528,7 @@ div {
 .input-group svg {
   width: 18px;
   height: 18px;
-  fill: var(--title-text-color);
+  fill: #212121;
   margin-right: 10px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1627,7 +1557,7 @@ div {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: rgba(0, 0, 0, 0.8);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), top 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), top 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), top 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1636,13 +1566,13 @@ div {
 
 .input-group:hover .form-input,
 .input-group:focus .form-input {
-  border: 1px solid var(--accent-color);
+  border: 1px solid #2196f3;
 }
 
 .input-group:hover .field-descriprion,
 .input-group:focus .field-descriprion,
 .form-input:not(:placeholder-shown) ~ label > .field-descriprion {
-  color: var(--accent-color);
+  color: #2196f3;
   top: -105%;
   left: 0;
 }
@@ -1650,7 +1580,7 @@ div {
 .input-group:hover svg,
 .input-group:focus svg,
 .form-input:not(:placeholder-shown) ~ label > svg {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .comments-container {
@@ -1676,7 +1606,7 @@ div {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: rgba(0, 0, 0, 0.8);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), top 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), top 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), top 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1686,7 +1616,7 @@ div {
 .comments-container:hover .comments,
 .comments-container:focus .comments,
 .comments:not(:placeholder-shown) {
-  border: 1px solid var(--accent-color);
+  border: 1px solid #2196f3;
 }
 
 .comments-container:hover .comments-label,
@@ -1694,7 +1624,7 @@ div {
 .comments:not(:placeholder-shown) ~ .comments-label {
   top: -20px;
   left: 16px;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .checkbox-input {
@@ -1717,7 +1647,7 @@ div {
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 7;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .checkbox-label::before {
@@ -1725,24 +1655,24 @@ div {
   height: 15px;
   width: 16px;
   fill: none;
-  background-color: var(--primary-white-color);
+  background-color: #ffffff;
   border-radius: 2px;
-  border: 2px solid var(--title-text-color);
+  border: 2px solid #212121;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-input:checked ~ .checkbox-label::before {
-  fill: var(--primary-white-color);
+  fill: #ffffff;
   background-image: url(../images/Vector2.svg);
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   background-size: contain;
   background-origin: border-box;
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
 .licence-agreement {
-  color: var(--accent-color);
+  color: #2196f3;
   text-decoration: underline;
 }
 
@@ -1771,7 +1701,7 @@ div {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */

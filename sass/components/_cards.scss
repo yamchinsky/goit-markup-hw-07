@@ -3,7 +3,7 @@
   padding-bottom: 34px;
 }
 
-.cards .container {
+.cards &-container {
   max-width: 1200px;
   min-width: 1200px;
   margin: auto;
@@ -11,27 +11,27 @@
   padding-right: 15px;
 }
 
-.button-container .buttons-list > li:not(:nth-last-child(-n + 1)) {
+.button-container &-buttons-list > li:not(:nth-last-child(-n + 1)) {
   margin-right: 8px;
 }
 
-.cards .button-container {
+.cards &-button-container {
   display: flex;
   padding-bottom: 50px;
   margin: 0 auto;
 }
 
-.button-container .buttons-list {
+.button-container &-buttons-list {
   display: flex;
   margin: 0 auto;
 }
 
-.button-container .button-primary {
+.button-container &-button-primary {
   min-height: 38px;
   border-radius: 4px;
 }
 
-.cards .label {
+.cards &-label {
   display: none;
 }
 

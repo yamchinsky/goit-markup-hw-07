@@ -4,7 +4,7 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header .container {
+.header &-container {
   display: flex;
   max-width: 1200px;
   min-height: 80px;
@@ -15,22 +15,22 @@
 }
 
 /* --Navigation container-- */
-.header .nav-container {
+.header &-nav-container {
   align-items: center;
   display: flex;
   margin-right: auto;
 }
 
-.header .list {
+.header &-list {
   padding: 0px;
   display: flex;
 }
 
-.header .list-item:not(:nth-last-child(-n + 1)) {
+.header &-list-item:not(:nth-last-child(-n + 1)) {
   padding-right: 50px;
 }
 
-.header .link {
+.header &-link {
   padding-top: 30px;
   padding-bottom: 30px;
   position: relative;
@@ -40,11 +40,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header .link:hover {
+.header &-link:hover {
   color: $accent-color;
 }
 
-.header .link::after {
+.header &-link::after {
   content: "";
   display: inline-block;
   width: 100%;
@@ -62,24 +62,24 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header .link:hover::after {
+.header &-link:hover::after {
   opacity: 1;
   color: $accent-color;
 }
 
-.header .link-current {
+.header &-link-current {
   color: $accent-color;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header .link-current:hover {
+.header &-link-current:hover {
   color: $accent-color;
 }
 
 .list-item {
-  color: $primary-black-color;
+  color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -102,7 +102,7 @@
   padding-bottom: 32px;
 }
 
-.auth-nav .auth-link {
+.auth-nav &-auth-link {
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
@@ -118,7 +118,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.auth-nav .icon,
+.auth-nav &-icon,
 .auth-link {
   border-radius: 0;
   color: #757575;
@@ -133,23 +133,23 @@
   top: 2px;
 }
 
-.auth-nav .auth-link:hover,
-.auth-nav .auth-link:hover svg {
+.auth-nav &-auth-link:hover,
+.auth-nav &-auth-link:hover svg {
   fill: $accent-color;
   color: $accent-color;
 }
 
-.header .button:focus,
-.header .button:hover,
-.header .link:focus,
-.header .link:hover,
-.footer .link:focus,
-.footer .link:hover {
+.header &-button:focus,
+.header &-button:hover,
+.header &-link:focus,
+.header &-link:hover,
+.footer &-link:focus,
+.footer &-link:hover {
   color: $accent-color;
 }
 
-.header .button:active,
-.header .link:active,
-.footer .link:active {
+.header &-button:active,
+.header &-link:active,
+.footer &-link:active {
   color: crimson;
 }

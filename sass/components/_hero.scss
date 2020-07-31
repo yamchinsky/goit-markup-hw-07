@@ -19,12 +19,12 @@
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url(../../images/Header\img.jpg);
-  background-size: cover;
+    url(../../images/Header.jpg);
   background-position: center;
+  background-size: cover;
 }
 
-.hero .title {
+.hero &-title {
   width: 696px;
   height: 120px;
   font-weight: 900;
@@ -37,7 +37,7 @@
   margin-bottom: 30px;
 }
 
-.hero .container {
+.hero &-container {
   display: inline-block;
 
   margin: 200px 452px 200px 452px;

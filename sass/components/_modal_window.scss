@@ -17,7 +17,7 @@
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-backdrop.is-hidden .modal-window {
+.modal-backdrop.is-hidden &-modal-window {
   transform: translate(-50%, -50%) scale(0, 0);
 }
 
@@ -61,12 +61,12 @@
   width: 18px;
   height: 18px;
   margin: auto;
-  fill: $primary-black-color;
+  fill: $primary-text-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-button:hover.modal-close-button > svg,
-.modal-close-button:focus .modal-close-button > svg {
+.modal-close-button:hover&-modal-close-button > svg,
+.modal-close-button:focus&-modal-close-button > svg {
   fill: $accent-color;
 }
 
@@ -131,13 +131,13 @@
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-group:hover .form-input,
-.input-group:focus .form-input {
+.input-group:hover &-form-input,
+.input-group:focus &-form-input {
   border: 1px solid $accent-color;
 }
 
-.input-group:hover .field-descriprion,
-.input-group:focus .field-descriprion,
+.input-group:hover &-field-descriprion,
+.input-group:focus &-field-descriprion,
 .form-input:not(:placeholder-shown) ~ label > .field-descriprion {
   color: $accent-color;
   top: -105%;
@@ -179,15 +179,15 @@
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comments-container:hover .comments,
-.comments-container:focus .comments,
+.comments-container:hover &-comments,
+.comments-container:focus &-comments,
 .comments:not(:placeholder-shown) {
   border: 1px solid $accent-color;
 }
 
-.comments-container:hover .comments-label,
-.comments-container:focus .comments-label,
-.comments:not(:placeholder-shown) ~ .comments-label {
+.comments-container:hover &-comments-label,
+.comments-container:focus &-comments-label,
+.comments:not(:placeholder-shown) ~ &-comments-label {
   top: -20px;
   left: 16px;
   color: $accent-color;

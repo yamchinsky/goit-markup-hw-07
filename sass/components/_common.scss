@@ -29,7 +29,7 @@
   background: #2f303a;
 }
 
-.footer .container {
+.footer &-container {
   display: flex;
   max-width: 1200px;
   min-height: 80px;
@@ -40,7 +40,7 @@
   align-items: baseline;
 }
 
-.footer .part-logo-footer,
+.footer &-part-logo-footer,
 .address {
   color: $primary-white-color;
   transition-property: color;
@@ -48,39 +48,39 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer .part-logo {
+.footer &-part-logo {
   color: $accent-color;
 }
 
-.footer .part-logo-footer:hover,
-.footer .part-logo-footer:focus {
+.footer &-part-logo-footer:hover,
+.footer &-part-logo-footer:focus {
   color: $accent-color;
 }
 
-.footer .part-logo:active,
-.footer .part-logo-footer:active {
+.footer &-part-logo:active,
+.footer &-part-logo-footer:active {
   color: crimson;
 }
 
-.footer .contact-link {
+.footer &-contact-link {
   color: $description-text-color;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer .contact-link:hover,
-.footer .contact-link:focus {
+.footer &-contact-link:hover,
+.footer &-contact-link:focus {
   color: $accent-color;
 }
 
-.footer .join {
+.footer &-join {
   text-align: left;
   margin-left: 69px;
   margin-top: 10px;
 }
 
-.join .join-title {
+.join &-join-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -90,19 +90,19 @@
   margin-bottom: 20px;
 }
 
-.join .join-social-link-list {
+.join &-join-social-link-list {
   display: flex;
   list-style: none;
   min-width: 206px;
 }
 
-.join-social-link-list .join-social-item {
+.join-social-link-list &-join-social-item {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 }
 
-.join-social-item .join-link {
+.join-social-item &-join-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -117,25 +117,25 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join-social-item .join-link:hover,
-.join-social-item .join-link:focus {
+.join-social-item &-join-link:hover,
+.join-social-item &-join-link:focus {
   background-color: $accent-color;
 }
 
-.footer .left-container {
+.footer &-left-container {
   min-width: 231px;
   text-align: left;
   margin-left: 0;
 }
 
-.left-container .address {
+.left-container &-address {
   margin: 10px 0;
 }
-.left-container .link {
+.left-container &-link {
   margin-bottom: 9px;
 }
 
-.left-container .contacts {
+.left-container &-contacts {
   display: flex;
   flex-direction: column;
 }
@@ -144,7 +144,7 @@
   margin-left: auto;
 }
 
-.right-container .title {
+.right-container &-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
