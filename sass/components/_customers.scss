@@ -3,39 +3,43 @@
   padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
-.customers &-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.customers &-title {
+
+.customers .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-.customers &-customers-list {
+.customers-list {
   list-style: none;
   display: flex;
   margin-top: 50px;
+
+  .item {
+    display: flex;
+    margin: auto;
+    border: 1px solid $description-text-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 3px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+
+    &:not(:nth-last-child(-n + 1)) {
+      margin-right: 30px;
+    }
+  }
 }
 
-.customers-list &-item {
-  display: flex;
-  margin: auto;
-  border: 1px solid $description-text-color;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 3px;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(4px);
-}
-.customers-list &-item:not(:nth-last-child(-n + 1)) {
-  margin-right: 30px;
-}
-.customers-list &-customer-link {
+.customer-link {
   display: inline-flex;
   margin: auto;
   height: 90px;
@@ -45,23 +49,23 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: $primary-white-color;
+
+  &:hover {
+    color: $accent-color;
+    fill: $accent-color;
+
+    .icon {
+      color: $accent-color;
+      fill: $accent-color;
+      border: 1px solid $accent-color;
+    }
+  }
 }
 
-.customer-link &-icon {
+.customer-link .icon {
   color: $description-text-color;
   fill: $description-text-color;
   transition-property: fill, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customer-link:hover {
-  color: $accent-color;
-  fill: $accent-color;
-}
-
-.customer-link:hover .icon {
-  color: $accent-color;
-  fill: $accent-color;
-  border: 1px solid $accent-color;
 }

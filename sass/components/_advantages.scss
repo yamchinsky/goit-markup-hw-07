@@ -3,23 +3,33 @@
   margin: 0 auto;
   padding: 94px 15px;
   border-bottom: 1px solid #ececec;
+
+  &-container {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &-label {
+    display: none;
+  }
 }
 
-.advantages &-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-top: 30px;
-  text-align: left;
+.advantages .list {
+  display: flex;
+  margin: 0 auto;
+
+  &-item {
+    max-width: 270px;
+    border-radius: 4px;
+    overflow: hidden;
+
+    &:not(:nth-last-child(-n + 1)) {
+      margin-right: 30px;
+    }
+  }
 }
 
-.label {
-  display: none;
-}
-
-.advantages &-icon-container {
+.item .icon-container {
   width: 270px;
   height: 120px;
   padding: 25px 100px;
@@ -29,33 +39,24 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
-.advantages &-icon-container:hover,
-.advantages &-icon-container:focus {
-  background-color: $accent-color;
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-align: left;
 }
 
-.advantages &-container {
-  display: flex;
-  margin: 0 auto;
-}
-
-.advantages &-list {
-  display: flex;
-  margin: 0 auto;
-}
-
-.advantages &-item {
-  max-width: 270px;
-  border-radius: 4px;
-  overflow: hidden;
-}
-.advantages &-item:not(:nth-last-child(-n + 1)) {
-  margin-right: 30px;
-}
-
-.item &-paragraph-text {
+.paragraph-text {
   font-size: 14px;
   line-height: 1.7;
   /* or 171% */

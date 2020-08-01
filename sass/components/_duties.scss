@@ -1,34 +1,45 @@
 .duties {
   padding: 94px 0;
+
+  .container {
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+  }
 }
 
-.duties &-container {
-  max-width: 1200px;
-  padding: 0px 15px;
-  margin: 0 auto;
-}
-
-.duties &-list {
+.duties .list {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
 }
 
-.duties &-title {
+.duties .title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.17;
   text-align: center;
 }
 
-.duties &-duties-title {
+.duties .item {
   display: flex;
-  width: 370px;
-  min-height: 70px;
+  flex-direction: column;
+  min-width: 370px;
+  position: relative;
+
+  &:not(:nth-last-child(-n + 1)) {
+    margin-right: 30px;
+  }
+}
+
+.duties-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  display: flex;
+  width: 370px;
+  min-height: 70px;
   text-align: center;
   text-transform: uppercase;
   background-color: rgba(47, 48, 58, 0.8);
@@ -38,17 +49,7 @@
   left: 0;
 }
 
-.duties &-item {
-  display: flex;
-  flex-direction: column;
-  min-width: 370px;
-  position: relative;
-}
-.duties &-item:not(:nth-last-child(-n + 1)) {
-  margin-right: 30px;
-}
-
-.duties &-duties-title-item {
+.duties-title-item {
   display: inline-block;
   margin: auto;
 }

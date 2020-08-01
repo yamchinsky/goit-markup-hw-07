@@ -2,80 +2,28 @@
   background-color: $primary-white-color;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
+
+  .container {
+    display: flex;
+    max-width: 1200px;
+    min-height: 80px;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* --Navigation container-- */
+  .nav-container {
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+  }
 }
 
-.header &-container {
-  display: flex;
-  max-width: 1200px;
-  min-height: 80px;
-  align-items: center;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* --Navigation container-- */
-.header &-nav-container {
-  align-items: center;
-  display: flex;
-  margin-right: auto;
-}
-
-.header &-list {
+.header .list {
   padding: 0px;
   display: flex;
-}
-
-.header &-list-item:not(:nth-last-child(-n + 1)) {
-  padding-right: 50px;
-}
-
-.header &-link {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  position: relative;
-  color: $title-text-color;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header &-link:hover {
-  color: $accent-color;
-}
-
-.header &-link::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $accent-color;
-  overflow: hidden;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  opacity: 0;
-  color: $title-text-color;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header &-link:hover::after {
-  opacity: 1;
-  color: $accent-color;
-}
-
-.header &-link-current {
-  color: $accent-color;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header &-link-current:hover {
-  color: $accent-color;
 }
 
 .list-item {
@@ -84,6 +32,58 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  &:not(:nth-last-child(-n + 1)) {
+    padding-right: 50px;
+  }
+}
+
+.header .link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  color: $title-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $accent-color;
+
+    &::after {
+      opacity: 1;
+      color: $accent-color;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0;
+    color: $title-text-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.header .link-current {
+  color: $accent-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 .contacts-list {
@@ -100,26 +100,34 @@
   margin: 0 1rem;
   padding-top: 32px;
   padding-bottom: 32px;
-}
 
-.auth-nav &-auth-link {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-  transition-property: color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /*   transition-property: color;
+  .auth-link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /*   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+    border-radius: 0;
+    color: #757575;
+    fill: #757575;
+
+    &:hover,
+    &:hover svg {
+      fill: $accent-color;
+      color: $accent-color;
+    }
+  }
 }
 
-.auth-nav &-icon,
-.auth-link {
+.auth-nav .icon {
   border-radius: 0;
   color: #757575;
   fill: #757575;
@@ -133,23 +141,11 @@
   top: 2px;
 }
 
-.auth-nav &-auth-link:hover,
-.auth-nav &-auth-link:hover svg {
-  fill: $accent-color;
+.header .button:focus,
+.header .button:hover,
+.header .link:focus,
+.header .link:hover,
+.footer .link:focus,
+.footer .link:hover {
   color: $accent-color;
-}
-
-.header &-button:focus,
-.header &-button:hover,
-.header &-link:focus,
-.header &-link:hover,
-.footer &-link:focus,
-.footer &-link:hover {
-  color: $accent-color;
-}
-
-.header &-button:active,
-.header &-link:active,
-.footer &-link:active {
-  color: crimson;
 }

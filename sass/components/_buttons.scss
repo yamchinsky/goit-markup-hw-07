@@ -25,12 +25,12 @@
   cursor: pointer;
 
   /* текст */
-  text-align: center; /* центрирование  по горзонтали */
+
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.06em;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  text-align: center; /* центрирование  по горзонтали */
 
   /* цвета */
   color: $primary-white-color;
@@ -42,15 +42,11 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.order-service:hover,
-.order-service:focus {
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.order-service:active {
-  box-shadow: inset 0px 2px 2px crimson;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  }
 }
 
 div {
@@ -74,12 +70,12 @@ div {
   cursor: pointer;
 
   /* текст */
-  text-align: center; /* центрирование  по горзонтали */
+
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.06em;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  text-align: center; /* центрирование  по горзонтали */
 
   /* цвета */
   color: $primary-text-color;
@@ -91,19 +87,10 @@ div {
   /* украшения   */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
 
-.service:hover,
-.service:focus {
-  background-color: $accent-color;
-  color: $primary-white-color;
-}
-
-.service:active {
-  box-shadow: inset 0px 2px 2px crimson;
-}
-
-div {
-  margin: 1rem;
-  text-align: center;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
 }
