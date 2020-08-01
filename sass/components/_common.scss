@@ -43,8 +43,7 @@ address {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
+  @extend %Font700_26;
   line-height: 1.19;
   margin-right: 85px;
   color: $accent-color;
@@ -130,8 +129,7 @@ address {
   margin-top: 10px;
 
   .join-title {
-    font-weight: 700;
-    font-size: 14px;
+    @extend %Font700_14;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -176,8 +174,7 @@ address {
   margin-left: auto;
 
   .title {
-    font-weight: 700;
-    font-size: 14px;
+    @extend %Font700_14;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -194,8 +191,7 @@ address {
 }
 
 .footer-submit {
-  font-weight: 700;
-  font-size: 16px;
+  @extend %Font700_16;
   line-height: 30px;
   display: flex;
   justify-content: center;

@@ -16,8 +16,7 @@
 }
 
 .duties .title {
-  font-weight: 700;
-  font-size: 36px;
+  @extend %Font700_36;
   line-height: 1.17;
   text-align: center;
 }
@@ -34,8 +33,7 @@
 }
 
 .duties-title {
-  font-weight: 700;
-  font-size: 14px;
+  @extend %Font700_14;
   line-height: 1.14;
   display: flex;
   width: 370px;

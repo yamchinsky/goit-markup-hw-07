@@ -51,8 +51,7 @@
 
 .feature-description {
   display: inline-block;
-  font-weight: 400;
-  font-size: 18px;
+  @extend %Font400_18;
   line-height: 1.56;
   color: $primary-white-color;
   padding: 40px;
@@ -66,8 +65,7 @@
 }
 
 .features-list .features-title {
-  font-weight: 700;
-  font-size: 18px;
+  @extend %Font700_18;
   line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;

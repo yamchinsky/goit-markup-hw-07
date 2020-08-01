@@ -13,8 +13,7 @@
 .link {
   color: $title-text-color;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
+  @extend %Font500_14;
   line-height: 1.14;
 }
 

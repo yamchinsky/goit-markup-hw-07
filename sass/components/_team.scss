@@ -36,8 +36,7 @@
 }
 
 .employees .name {
-  font-weight: 500;
-  font-size: 16px;
+  @extend %Font500_16;
   line-height: 1.19;
   /* identical to box height */
   text-align: center;

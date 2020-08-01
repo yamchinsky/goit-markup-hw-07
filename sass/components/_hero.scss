@@ -15,8 +15,7 @@
   .title {
     width: 696px;
     height: 120px;
-    font-weight: 900;
-    font-size: 44px;
+    @extend %Font900_44;
     line-height: 1.4;
     /* or 136% */
     text-align: center;

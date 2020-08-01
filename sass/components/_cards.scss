@@ -27,8 +27,7 @@
 }
 
 .button-container .buttons-list {
-  display: flex;
-  margin: 0 auto;
+  @extend %Flex0margin;
   justify-content: center;
 
   & > li:not(:nth-last-child(-n + 1)) {

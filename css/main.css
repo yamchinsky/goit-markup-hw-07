@@ -289,8 +289,6 @@ address {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
   line-height: 1.19;
   margin-right: 85px;
   color: #2196f3;
@@ -397,8 +395,6 @@ address {
 }
 
 .footer .join .join-title {
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -457,8 +453,6 @@ address {
 }
 
 .right-container .title {
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -476,8 +470,6 @@ address {
 }
 
 .footer-submit {
-  font-weight: 700;
-  font-size: 16px;
   line-height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,8 +524,6 @@ address {
 .link {
   color: #212121;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
 }
 
@@ -753,8 +743,6 @@ address {
 .hero .title {
   width: 696px;
   height: 120px;
-  font-weight: 900;
-  font-size: 44px;
   line-height: 1.4;
   /* or 136% */
   text-align: center;
@@ -781,22 +769,8 @@ address {
   border-bottom: 1px solid #ececec;
 }
 
-.advantages-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-}
-
 .advantages-label {
   display: none;
-}
-
-.advantages .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
 }
 
 .advantages .list-item {
@@ -867,8 +841,6 @@ address {
 }
 
 .duties .title {
-  font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
@@ -890,8 +862,6 @@ address {
 }
 
 .duties-title {
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -952,8 +922,6 @@ address {
 }
 
 .employees .name {
-  font-weight: 500;
-  font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
   text-align: center;
@@ -1043,8 +1011,6 @@ address {
 }
 
 .customers .title {
-  font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
@@ -1086,7 +1052,6 @@ address {
   display: inline-flex;
   margin: auto;
   height: 90px;
-  margin: auto;
   color: #757575;
   -webkit-transition-property: color, fill;
   transition-property: color, fill;
@@ -1281,8 +1246,6 @@ div {
 
 .feature-description {
   display: inline-block;
-  font-weight: 400;
-  font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
   padding: 40px;
@@ -1296,8 +1259,6 @@ div {
 }
 
 .features-list .features-title {
-  font-weight: 700;
-  font-size: 18px;
   line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
@@ -1345,10 +1306,6 @@ div {
 }
 
 .button-container .buttons-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1458,8 +1415,6 @@ div {
   height: 23px;
   display: block;
   font-family: Roboto;
-  font-weight: 400;
-  font-size: 20px;
   font-weight: bold;
   line-height: 1.15;
   letter-spacing: 0.03em;
@@ -1513,8 +1468,6 @@ div {
   left: 25px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-weight: 400;
-  font-size: 14px;
   letter-spacing: 0.01em;
   color: rgba(0, 0, 0, 0.8);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), top 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1562,8 +1515,6 @@ div {
   position: absolute;
   top: 12px;
   left: 16px;
-  font-weight: 400;
-  font-size: 14px;
   letter-spacing: 0.01em;
   color: rgba(0, 0, 0, 0.8);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), top 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1603,8 +1554,6 @@ div {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.7;
   color: #212121;
 }
@@ -1662,5 +1611,67 @@ div {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
+}
+
+.feature-description {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.modal-text {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.field-descriprion, .comments-label, .checkbox-label {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.employees .name {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.footer .join .join-title, .right-container .title, .duties-title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.footer-submit {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.duties .title, .customers .title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.features-list .features-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.hero .title {
+  font-weight: 900;
+  font-size: 44px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.advantages-container, .advantages .list, .button-container .buttons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */

@@ -11,8 +11,7 @@
 }
 
 .customers .title {
-  font-weight: 700;
-  font-size: 36px;
+  @extend %Font700_36;
   line-height: 1.17;
   text-align: center;
 }
@@ -43,7 +42,6 @@
   display: inline-flex;
   margin: auto;
   height: 90px;
-  margin: auto;
   color: $description-text-color;
   transition-property: color, fill;
   transition-duration: 250ms;
